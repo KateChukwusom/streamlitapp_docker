@@ -26,16 +26,8 @@ It is fully containerized and can run independently without a database.
 - Exposes port 8501
 - Entrypoint: `streamlit run <your_app_file>`
 
-### Running Locally
-
-Build the Docker image:
-
-```bash
-docker build -t katechisombili/streamlit-app -f Dockerfile .
-
-### Project 2: **Streamlit App with PostgreSQL**
-
-Overview
+## Project 2: Streamlit App with PostgreSQL
+### Overview
 
 This project extends the first app by connecting it to a PostgreSQL database to persist uploaded CSV data.
 
@@ -49,6 +41,13 @@ Features
 
 Upload CSV files
 
+Display first 5 rows and summary statistics
+
+Data persists in PostgreSQL database
+
+Secure configuration with .env file
+
+Easy setup using Docker Compose
 Display first 5 rows and summary statistics
 
 Data persists in PostgreSQL database
