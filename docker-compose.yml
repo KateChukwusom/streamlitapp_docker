@@ -1,12 +1,11 @@
-version: "3.8"
-
 services:
   app:
     build:
       context: .
       dockerfile: Dockerfile.streamlit-db
+    image: katechisombili/my-streamlitdb_app:latest
     ports:
-      - "8503:8501"
+      - "8501:8501"
     depends_on:
       - db
 
